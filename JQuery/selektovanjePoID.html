@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="selektovanjePoID.js"></script>
+    <title>Selektovanje po ID</title>
+</head>
+
+<body>
+    <h1>Selektovanje po ID</h1>
+    <div id="TestDiv" title="Div Title">
+        Ovo je moj div tekst
+    </div>
+    <div title="Contains Table">
+        <table id="DataTable">
+            <tr>
+                <td>Celija 1 Red 1</td>
+            </tr>
+            <tr>
+                <td>Celija 1 Red 2</td>
+            </tr>
+            <tr>
+                <td>Celija 1 Red 3</td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Ugnjezdena tabela sa celijom i jednim redom</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="blueDiv">
+        <span>Plavi span u divu</span>
+    </div>
+    <br>
+    <span class="BlueDiv"></span>
+    <br>
+    <div class="RedDiv">
+        <span>Crveni div</span>
+    </div>
+    <p>
+        <img src="843165.jpg" alt="slika" style="width: 200px;">
+    </p>
+    <form id="form1">
+        <table>
+            <tr>
+                <td>Ime</td>
+                <td><input type="text" id="ImeTextBox" value="Nikola"></td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="" id="sel">
+                        <option value="NS">Novi Sad</option>
+                        <option value="SU">Subotica</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Unos" id="submitDugme"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
